@@ -153,7 +153,7 @@
 
         function createfile(fileName, fileMessage, fileContent) {
             //    var filename =
-            var apiurl = "https://api.github.com/repos/" + nameWithOwner + "/contents/up/" + makeid() + '-' + fileName;
+            var apiurl = "https://api.github.com/repos/" + nameWithOwner + "/contents/" + makeid() + '-' + fileName;
             var filedata = JSON.stringify({
                 "message": fileMessage,
                 "content": fileContent
